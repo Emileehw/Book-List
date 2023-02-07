@@ -1,0 +1,20 @@
+
+/** Book list:
+Pride and Prejudice (5) Jane Austen
+Evie Drake (4) Linda Holmes
+The Marriage Game (5) Sara Desai
+**/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, title TEXT, rating INTEGER, author TEXT);
+
+INSERT INTO books VALUES (1, "Pride and Prejudice", 5, "Jane Austen");
+INSERT INTO books VALUES (2, "Evie Drake", 4, "Linda Holmes");
+INSERT INTO books VALUES (3, "The Marriage Game", 5, "Sara Desai");
+
+SELECT * FROM books;
+
+SELECT * FROM books WHERE rating >4;
+
+SELECT title FROM books WHERE author= "Sara Desai";
+
+SELECT author FROM books WHERE title = "Evie Drake";
